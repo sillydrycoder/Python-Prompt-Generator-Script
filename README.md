@@ -18,7 +18,7 @@ This Python script efficiently generates customized prompts using a template and
 
 ## **Usage**
 
-**1. Prepare your files:**
+**1. Understand your files (Not Necessary Already Done.):**
 
    * **key-values.csv:**
      * Create a CSV file with columns representing the keys to be replaced in your template.
@@ -31,10 +31,10 @@ This Python script efficiently generates customized prompts using a template and
 **2. Run the script:**
 
    ```bash
-   python main.py [--description-mode] 
+   python main.py [-d] 
    ```
 
-   * **Optional:** Use `--description-mode` to exclude titles and focus on city names in your prompts.
+   * **Optional:** Use `-d` to exclude titles and focus on city names in your prompts.
 
 ## **Explanation**
 
@@ -46,6 +46,8 @@ This Python script efficiently generates customized prompts using a template and
    Explore the Charm of, Paris, France
    A Journey Through, Tokyo, Japan
    ```
+   ![keyvalue.csv Example](/assets/keyvalues.csv_example.png
+
 
 * **Prompt Template ('prompt.txt')**
    Use `**/key/**` to mark replacement points. Example:
@@ -53,6 +55,9 @@ This Python script efficiently generates customized prompts using a template and
    ```
    Write a travel blog titled "**/title/**" about the captivating city of **/city/**, **/country/**.
    ```
+   ![prompt.txt Example](/assets/prompt.txt_example.png)
+
+   ![key_example1](/assets/key_example1.png) ![key_example2](/assets/key_example2.png)
    
 * **Output**
    Generated prompts are saved as individual .txt files within a specified folder.
@@ -63,24 +68,8 @@ This Python script efficiently generates customized prompts using a template and
 ## **Terminology**
 
 * **key:** A column header in 'key-values.csv', used as an identifier in the template.
-* `**/key/**`:  Indicates a placeholder in the template, to be substituted with values from 'key-values.csv'.
-
-## **Contributing**
-
-Feel free to submit bug reports, feature requests, and pull requests! 
-
-## **License**
-
-[Include the appropriate license for your project]
-
-## **Key Improvements:**
-
-* **Concise and Clear Title:** Emphasizes the tool's main functionality.
-* **Structured Installation:** Guides users with prerequisites and step-by-step instructions.
-* **Detailed Usage:** Explains file preparation and script execution with clarifying examples.
-* **Enhanced Explanation:** Provides visuals to demonstrate the CSV structure and prompt template format.
-* **Consistent Terminology:** Maintains a glossary for easy reference.
-* **Inviting Contributions and Licensing:** Encourages community engagement and clarifies usage rights.
+* `**/key/**`:  Indicates a placeholder in the template, to be substituted with values from 'key-values.csv'. 
 
 
 ## **Known Exceptions and Error:**
+**Nill**
