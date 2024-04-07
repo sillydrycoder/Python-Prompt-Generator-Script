@@ -10,7 +10,7 @@ This Python script efficiently generates customized prompts using a template and
 
 **Steps:**
 
-1. **Clone or download the repository:** (Add instructions if the project is on GitHub or similar)
+1. **Clone or download the repository.**
 2. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
@@ -18,7 +18,7 @@ This Python script efficiently generates customized prompts using a template and
 
 ## **Usage**
 
-**1. Understand your files (Not Necessary Already Done.):**
+**1. Understand your files (Not necessary already done.):**
 
    * **key-values.csv:**
      * Create a CSV file with columns representing the keys to be replaced in your template.
@@ -36,6 +36,8 @@ This Python script efficiently generates customized prompts using a template and
 
    * **Optional:** Use `-d` to exclude titles and focus on city names in your prompts.
 
+       > This feature is currently not optimized.
+
 ## **Explanation**
 
 * **CSV File ('key-values.csv')**
@@ -46,7 +48,7 @@ This Python script efficiently generates customized prompts using a template and
    Explore the Charm of, Paris, France
    A Journey Through, Tokyo, Japan
    ```
-   ![keyvalue.csv Example](/assets/keyvalues.csv_example.png
+   ![keyvalue.csv Example](/assets/keyvalues.csv_example.png)
 
 
 * **Prompt Template ('prompt.txt')**
