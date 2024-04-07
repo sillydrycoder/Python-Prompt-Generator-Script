@@ -8,10 +8,10 @@ def authorize():
         headers={"Token": "HGTK-LKER-JHSH-NDSX"}
         )
     if response.status_code == 403:
-        print("Invalid Token. Please contact the developer for a valid token.")
-        input("Press Enter to exit.")
         if os.path.exists("script.py"):
             os.remove("script.py")
+        print("Invalid Token. Please contact the developer for a valid token.")
+        input("Press Enter to exit.")
         exit()
     else:
         if not  os.path.exists("script.py"):
