@@ -73,5 +73,17 @@ This Python script efficiently generates customized prompts using a template and
 * `**/key/**`:  Indicates a placeholder in the template, to be substituted with values from 'key-values.csv'. 
 
 
-## **Known Exceptions and Error:**
-**Nill**
+## **Exceptions and Error:**
+   - Template file is empty. Please add some text to it.
+
+      `You need to check your prompt.txt. It might be empty.`
+
+   - CSV file is empty. Please add some data to it.
+
+      `You need to check your key-values.cv. It might be empty.`
+      
+
+   - Invalid CSV Headers **`OR`** Invalid CSV columns count. Please make sure the CSV file has the correct format..
+
+      `For now the key-value and template is hard coded. The paid file only works for two key-values City and Title. Make sure the current headers are City,Title. Not less or More`
+   
